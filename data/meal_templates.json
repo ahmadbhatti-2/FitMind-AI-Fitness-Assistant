@@ -1,0 +1,653 @@
+[
+  {
+    "id": "mt_001",
+    "name": "Egg Oat Breakfast",
+    "meal_type": "breakfast",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "ingredients": [
+      "eggs",
+      "oats",
+      "banana"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_002",
+    "name": "Greek Yogurt Oats Bowl",
+    "meal_type": "breakfast",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "fat_loss"
+    ],
+    "ingredients": [
+      "greek_yogurt",
+      "oats",
+      "berries"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_003",
+    "name": "Tofu Veggie Scramble",
+    "meal_type": "breakfast",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "fat_loss"
+    ],
+    "ingredients": [
+      "tofu",
+      "spinach",
+      "tomato"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_004",
+    "name": "Chicken Rice Bowl",
+    "meal_type": "lunch",
+    "diet_types": [
+      "omnivore"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "ingredients": [
+      "chicken_breast",
+      "brown_rice",
+      "broccoli"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_005",
+    "name": "Lentil Roti Bowl",
+    "meal_type": "lunch",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "general_fitness",
+      "fat_loss"
+    ],
+    "ingredients": [
+      "lentils",
+      "whole_wheat_roti",
+      "spinach"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_006",
+    "name": "Tuna Potato Bowl",
+    "meal_type": "lunch",
+    "diet_types": [
+      "omnivore",
+      "pescatarian"
+    ],
+    "goal_tags": [
+      "fat_loss",
+      "muscle_gain"
+    ],
+    "ingredients": [
+      "tuna",
+      "potato",
+      "cucumber"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_007",
+    "name": "Paneer Roti Plate",
+    "meal_type": "lunch",
+    "diet_types": [
+      "vegetarian"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "ingredients": [
+      "paneer",
+      "whole_wheat_roti",
+      "salad"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_008",
+    "name": "Salmon Quinoa Bowl",
+    "meal_type": "dinner",
+    "diet_types": [
+      "omnivore",
+      "pescatarian"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "ingredients": [
+      "salmon",
+      "quinoa",
+      "broccoli"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_009",
+    "name": "Chicken Sweet Potato Plate",
+    "meal_type": "dinner",
+    "diet_types": [
+      "omnivore"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "fat_loss"
+    ],
+    "ingredients": [
+      "chicken_breast",
+      "sweet_potato",
+      "spinach"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_010",
+    "name": "Chickpea Quinoa Bowl",
+    "meal_type": "dinner",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "general_fitness",
+      "fat_loss"
+    ],
+    "ingredients": [
+      "chickpeas",
+      "quinoa",
+      "vegetables"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_011",
+    "name": "Tofu Rice Stir Fry",
+    "meal_type": "dinner",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "ingredients": [
+      "tofu",
+      "white_rice",
+      "capsicum"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_012",
+    "name": "Egg Roti Dinner",
+    "meal_type": "dinner",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "ingredients": [
+      "eggs",
+      "whole_wheat_roti",
+      "vegetables"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_013",
+    "name": "Banana Peanut Snack",
+    "meal_type": "snack",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "pre_workout"
+    ],
+    "ingredients": [
+      "banana",
+      "peanut_butter"
+    ],
+    "high_protein": false
+  },
+  {
+    "id": "mt_014",
+    "name": "Greek Yogurt Berries",
+    "meal_type": "snack",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "goal_tags": [
+      "fat_loss",
+      "general_fitness"
+    ],
+    "ingredients": [
+      "greek_yogurt",
+      "berries"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_015",
+    "name": "Hummus Veggie Snack",
+    "meal_type": "snack",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "fat_loss",
+      "general_fitness"
+    ],
+    "ingredients": [
+      "hummus",
+      "cucumber",
+      "carrot"
+    ],
+    "high_protein": false
+  },
+  {
+    "id": "mt_016",
+    "name": "Dates and Yogurt",
+    "meal_type": "post_workout",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "ingredients": [
+      "dates",
+      "greek_yogurt"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_017",
+    "name": "Milk Banana Shake",
+    "meal_type": "post_workout",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "ingredients": [
+      "milk",
+      "banana",
+      "peanut_butter"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_018",
+    "name": "Tofu Rice Recovery Bowl",
+    "meal_type": "post_workout",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "ingredients": [
+      "tofu",
+      "white_rice",
+      "vegetables"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_019",
+    "name": "Chicken Rice Recovery",
+    "meal_type": "post_workout",
+    "diet_types": [
+      "omnivore"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "ingredients": [
+      "chicken_breast",
+      "white_rice"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_020",
+    "name": "Lentil Rice Recovery",
+    "meal_type": "post_workout",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "ingredients": [
+      "lentils",
+      "white_rice"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_021",
+    "name": "Oats Banana Preworkout",
+    "meal_type": "pre_workout",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "endurance",
+      "fat_loss",
+      "muscle_gain"
+    ],
+    "ingredients": [
+      "oats",
+      "banana"
+    ],
+    "high_protein": false
+  },
+  {
+    "id": "mt_022",
+    "name": "Toast Peanut Butter Preworkout",
+    "meal_type": "pre_workout",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "endurance",
+      "muscle_gain"
+    ],
+    "ingredients": [
+      "whole_wheat_bread",
+      "peanut_butter"
+    ],
+    "high_protein": false
+  },
+  {
+    "id": "mt_023",
+    "name": "Fruit Yogurt Snack",
+    "meal_type": "snack",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "goal_tags": [
+      "general_fitness"
+    ],
+    "ingredients": [
+      "greek_yogurt",
+      "mango"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_024",
+    "name": "Edamame Snack Bowl",
+    "meal_type": "snack",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "fat_loss"
+    ],
+    "ingredients": [
+      "edamame"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_025",
+    "name": "Bean Rice Bowl",
+    "meal_type": "lunch",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "ingredients": [
+      "black_beans",
+      "brown_rice",
+      "tomato"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_026",
+    "name": "Turkey Rice Bowl",
+    "meal_type": "lunch",
+    "diet_types": [
+      "omnivore"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "fat_loss"
+    ],
+    "ingredients": [
+      "turkey_breast",
+      "brown_rice",
+      "broccoli"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_027",
+    "name": "Shrimp Quinoa Bowl",
+    "meal_type": "dinner",
+    "diet_types": [
+      "omnivore",
+      "pescatarian"
+    ],
+    "goal_tags": [
+      "fat_loss",
+      "muscle_gain"
+    ],
+    "ingredients": [
+      "shrimp",
+      "quinoa",
+      "vegetables"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_028",
+    "name": "Sardine Roti Plate",
+    "meal_type": "dinner",
+    "diet_types": [
+      "omnivore",
+      "pescatarian"
+    ],
+    "goal_tags": [
+      "strength",
+      "general_fitness"
+    ],
+    "ingredients": [
+      "sardines",
+      "whole_wheat_roti",
+      "cucumber"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_029",
+    "name": "Paneer Quinoa Bowl",
+    "meal_type": "dinner",
+    "diet_types": [
+      "vegetarian"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "ingredients": [
+      "paneer",
+      "quinoa",
+      "spinach"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_030",
+    "name": "Tempeh Rice Bowl",
+    "meal_type": "dinner",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "ingredients": [
+      "tempeh",
+      "brown_rice",
+      "broccoli"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_031",
+    "name": "Chia Yogurt Bowl",
+    "meal_type": "breakfast",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "goal_tags": [
+      "fat_loss",
+      "general_fitness"
+    ],
+    "ingredients": [
+      "greek_yogurt",
+      "chia_seeds",
+      "berries"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_032",
+    "name": "Dalia Milk Bowl",
+    "meal_type": "breakfast",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "ingredients": [
+      "dalia",
+      "milk",
+      "banana"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_033",
+    "name": "Chickpea Roti Wrap",
+    "meal_type": "lunch",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "goal_tags": [
+      "fat_loss",
+      "general_fitness"
+    ],
+    "ingredients": [
+      "chickpeas",
+      "whole_wheat_roti",
+      "cucumber"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_034",
+    "name": "Beef Rice Plate",
+    "meal_type": "dinner",
+    "diet_types": [
+      "omnivore"
+    ],
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "ingredients": [
+      "beef_lean",
+      "white_rice",
+      "vegetables"
+    ],
+    "high_protein": true
+  },
+  {
+    "id": "mt_035",
+    "name": "Fish Potato Plate",
+    "meal_type": "dinner",
+    "diet_types": [
+      "pescatarian",
+      "omnivore"
+    ],
+    "goal_tags": [
+      "fat_loss",
+      "general_fitness"
+    ],
+    "ingredients": [
+      "tuna",
+      "potato",
+      "spinach"
+    ],
+    "high_protein": true
+  }
+]

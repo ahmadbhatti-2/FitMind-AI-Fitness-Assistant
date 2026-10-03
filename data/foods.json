@@ -1,0 +1,1489 @@
+[
+  {
+    "id": "food_001",
+    "name": "Chicken Breast",
+    "category": "protein",
+    "diet_types": [
+      "omnivore",
+      "pescatarian"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "post_workout"
+    ],
+    "tags": [
+      "high_protein",
+      "lean"
+    ],
+    "contains": [
+      "chicken"
+    ],
+    "common_allergens": [
+      "chicken"
+    ],
+    "protein_g": 31,
+    "carbs_g": 0,
+    "fat_g": 3.6,
+    "calories_per_100g": 165
+  },
+  {
+    "id": "food_002",
+    "name": "Eggs",
+    "category": "protein",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high_protein"
+    ],
+    "contains": [
+      "egg"
+    ],
+    "common_allergens": [
+      "egg"
+    ],
+    "protein_g": 13,
+    "carbs_g": 1.1,
+    "fat_g": 10.6,
+    "calories_per_100g": 143
+  },
+  {
+    "id": "food_003",
+    "name": "Greek Yogurt",
+    "category": "dairy",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack",
+      "post_workout"
+    ],
+    "tags": [
+      "high_protein"
+    ],
+    "contains": [
+      "milk"
+    ],
+    "common_allergens": [
+      "milk"
+    ],
+    "protein_g": 10,
+    "carbs_g": 3.6,
+    "fat_g": 4,
+    "calories_per_100g": 97
+  },
+  {
+    "id": "food_004",
+    "name": "Milk",
+    "category": "dairy",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack",
+      "post_workout"
+    ],
+    "tags": [
+      "protein",
+      "calcium"
+    ],
+    "contains": [
+      "milk"
+    ],
+    "common_allergens": [
+      "milk"
+    ],
+    "protein_g": 3.4,
+    "carbs_g": 5,
+    "fat_g": 3.3,
+    "calories_per_100g": 61
+  },
+  {
+    "id": "food_005",
+    "name": "Cottage Cheese",
+    "category": "dairy",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack",
+      "dinner"
+    ],
+    "tags": [
+      "high_protein"
+    ],
+    "contains": [
+      "milk"
+    ],
+    "common_allergens": [
+      "milk"
+    ],
+    "protein_g": 11,
+    "carbs_g": 3.4,
+    "fat_g": 4.3,
+    "calories_per_100g": 98
+  },
+  {
+    "id": "food_006",
+    "name": "Tuna",
+    "category": "protein",
+    "diet_types": [
+      "omnivore",
+      "pescatarian"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "post_workout"
+    ],
+    "tags": [
+      "high_protein",
+      "lean"
+    ],
+    "contains": [
+      "fish"
+    ],
+    "common_allergens": [
+      "fish"
+    ],
+    "protein_g": 29,
+    "carbs_g": 0,
+    "fat_g": 0.8,
+    "calories_per_100g": 132
+  },
+  {
+    "id": "food_007",
+    "name": "Salmon",
+    "category": "protein",
+    "diet_types": [
+      "omnivore",
+      "pescatarian"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high_protein",
+      "omega_3"
+    ],
+    "contains": [
+      "fish"
+    ],
+    "common_allergens": [
+      "fish"
+    ],
+    "protein_g": 20,
+    "carbs_g": 0,
+    "fat_g": 13,
+    "calories_per_100g": 208
+  },
+  {
+    "id": "food_008",
+    "name": "Lentils",
+    "category": "legume",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high_protein",
+      "fiber"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 9,
+    "carbs_g": 20,
+    "fat_g": 0.4,
+    "calories_per_100g": 116
+  },
+  {
+    "id": "food_009",
+    "name": "Chickpeas",
+    "category": "legume",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "tags": [
+      "protein",
+      "fiber"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 8.9,
+    "carbs_g": 27.4,
+    "fat_g": 2.6,
+    "calories_per_100g": 164
+  },
+  {
+    "id": "food_010",
+    "name": "Kidney Beans",
+    "category": "legume",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "protein",
+      "fiber"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 8.7,
+    "carbs_g": 22.8,
+    "fat_g": 0.5,
+    "calories_per_100g": 127
+  },
+  {
+    "id": "food_011",
+    "name": "Tofu",
+    "category": "soy",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "post_workout"
+    ],
+    "tags": [
+      "high_protein"
+    ],
+    "contains": [
+      "soy"
+    ],
+    "common_allergens": [
+      "soy"
+    ],
+    "protein_g": 8.1,
+    "carbs_g": 0.9,
+    "fat_g": 4.8,
+    "calories_per_100g": 76
+  },
+  {
+    "id": "food_012",
+    "name": "Tempeh",
+    "category": "soy",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high_protein"
+    ],
+    "contains": [
+      "soy"
+    ],
+    "common_allergens": [
+      "soy"
+    ],
+    "protein_g": 19.9,
+    "carbs_g": 7.6,
+    "fat_g": 10.8,
+    "calories_per_100g": 195
+  },
+  {
+    "id": "food_013",
+    "name": "Oats",
+    "category": "grain",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack",
+      "pre_workout"
+    ],
+    "tags": [
+      "complex_carbs",
+      "fiber"
+    ],
+    "contains": [
+      "gluten"
+    ],
+    "common_allergens": [
+      "gluten"
+    ],
+    "protein_g": 16.9,
+    "carbs_g": 66.3,
+    "fat_g": 6.9,
+    "calories_per_100g": 389
+  },
+  {
+    "id": "food_014",
+    "name": "Brown Rice",
+    "category": "grain",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "post_workout"
+    ],
+    "tags": [
+      "complex_carbs"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 2.6,
+    "carbs_g": 23,
+    "fat_g": 0.9,
+    "calories_per_100g": 111
+  },
+  {
+    "id": "food_015",
+    "name": "White Rice",
+    "category": "grain",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "post_workout"
+    ],
+    "tags": [
+      "easy_digesting",
+      "carbs"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 2.7,
+    "carbs_g": 28,
+    "fat_g": 0.3,
+    "calories_per_100g": 130
+  },
+  {
+    "id": "food_016",
+    "name": "Quinoa",
+    "category": "grain",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "protein",
+      "fiber"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 4.4,
+    "carbs_g": 21.3,
+    "fat_g": 1.9,
+    "calories_per_100g": 120
+  },
+  {
+    "id": "food_017",
+    "name": "Whole Wheat Bread",
+    "category": "grain",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack",
+      "lunch"
+    ],
+    "tags": [
+      "complex_carbs",
+      "fiber"
+    ],
+    "contains": [
+      "gluten"
+    ],
+    "common_allergens": [
+      "gluten"
+    ],
+    "protein_g": 13,
+    "carbs_g": 41,
+    "fat_g": 4.2,
+    "calories_per_100g": 247
+  },
+  {
+    "id": "food_018",
+    "name": "Banana",
+    "category": "fruit",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack",
+      "pre_workout",
+      "post_workout"
+    ],
+    "tags": [
+      "quick_carbs"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 1.1,
+    "carbs_g": 22.8,
+    "fat_g": 0.3,
+    "calories_per_100g": 89
+  },
+  {
+    "id": "food_019",
+    "name": "Apple",
+    "category": "fruit",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack"
+    ],
+    "tags": [
+      "fiber"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 0.3,
+    "carbs_g": 13.8,
+    "fat_g": 0.2,
+    "calories_per_100g": 52
+  },
+  {
+    "id": "food_020",
+    "name": "Berries",
+    "category": "fruit",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack"
+    ],
+    "tags": [
+      "antioxidant",
+      "fiber"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 0.7,
+    "carbs_g": 14,
+    "fat_g": 0.3,
+    "calories_per_100g": 57
+  },
+  {
+    "id": "food_021",
+    "name": "Mango",
+    "category": "fruit",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack",
+      "post_workout"
+    ],
+    "tags": [
+      "quick_carbs"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 0.8,
+    "carbs_g": 15,
+    "fat_g": 0.4,
+    "calories_per_100g": 60
+  },
+  {
+    "id": "food_022",
+    "name": "Spinach",
+    "category": "vegetable",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "micronutrients",
+      "low_calorie"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 2.9,
+    "carbs_g": 3.6,
+    "fat_g": 0.4,
+    "calories_per_100g": 23
+  },
+  {
+    "id": "food_023",
+    "name": "Broccoli",
+    "category": "vegetable",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "fiber",
+      "micronutrients"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 2.8,
+    "carbs_g": 6.6,
+    "fat_g": 0.4,
+    "calories_per_100g": 34
+  },
+  {
+    "id": "food_024",
+    "name": "Carrot",
+    "category": "vegetable",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "tags": [
+      "fiber"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 0.9,
+    "carbs_g": 9.6,
+    "fat_g": 0.2,
+    "calories_per_100g": 41
+  },
+  {
+    "id": "food_025",
+    "name": "Sweet Potato",
+    "category": "vegetable",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "pre_workout"
+    ],
+    "tags": [
+      "complex_carbs",
+      "fiber"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 1.6,
+    "carbs_g": 20.1,
+    "fat_g": 0.1,
+    "calories_per_100g": 86
+  },
+  {
+    "id": "food_026",
+    "name": "Potato",
+    "category": "vegetable",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "post_workout"
+    ],
+    "tags": [
+      "carbs"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 2,
+    "carbs_g": 17,
+    "fat_g": 0.1,
+    "calories_per_100g": 77
+  },
+  {
+    "id": "food_027",
+    "name": "Avocado",
+    "category": "fat",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "healthy_fat"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 2,
+    "carbs_g": 8.5,
+    "fat_g": 14.7,
+    "calories_per_100g": 160
+  },
+  {
+    "id": "food_028",
+    "name": "Almonds",
+    "category": "nut",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "snack",
+      "breakfast"
+    ],
+    "tags": [
+      "healthy_fat",
+      "protein"
+    ],
+    "contains": [
+      "nuts"
+    ],
+    "common_allergens": [
+      "nuts"
+    ],
+    "protein_g": 21.2,
+    "carbs_g": 21.7,
+    "fat_g": 49.9,
+    "calories_per_100g": 579
+  },
+  {
+    "id": "food_029",
+    "name": "Peanut Butter",
+    "category": "nut",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack"
+    ],
+    "tags": [
+      "healthy_fat",
+      "protein"
+    ],
+    "contains": [
+      "peanuts"
+    ],
+    "common_allergens": [
+      "peanuts"
+    ],
+    "protein_g": 25,
+    "carbs_g": 20,
+    "fat_g": 50,
+    "calories_per_100g": 588
+  },
+  {
+    "id": "food_030",
+    "name": "Olive Oil",
+    "category": "fat",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "healthy_fat"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 100,
+    "calories_per_100g": 884
+  },
+  {
+    "id": "food_031",
+    "name": "Paneer",
+    "category": "dairy",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "post_workout"
+    ],
+    "tags": [
+      "high_protein"
+    ],
+    "contains": [
+      "milk"
+    ],
+    "common_allergens": [
+      "milk"
+    ],
+    "protein_g": 18,
+    "carbs_g": 3.4,
+    "fat_g": 20,
+    "calories_per_100g": 265
+  },
+  {
+    "id": "food_032",
+    "name": "Beef Lean",
+    "category": "protein",
+    "diet_types": [
+      "omnivore"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high_protein",
+      "iron"
+    ],
+    "contains": [
+      "beef"
+    ],
+    "common_allergens": [
+      "beef"
+    ],
+    "protein_g": 26,
+    "carbs_g": 0,
+    "fat_g": 15,
+    "calories_per_100g": 250
+  },
+  {
+    "id": "food_033",
+    "name": "Turkey Breast",
+    "category": "protein",
+    "diet_types": [
+      "omnivore"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "post_workout"
+    ],
+    "tags": [
+      "high_protein",
+      "lean"
+    ],
+    "contains": [
+      "turkey"
+    ],
+    "common_allergens": [
+      "turkey"
+    ],
+    "protein_g": 29,
+    "carbs_g": 0,
+    "fat_g": 1.8,
+    "calories_per_100g": 135
+  },
+  {
+    "id": "food_034",
+    "name": "Shrimp",
+    "category": "protein",
+    "diet_types": [
+      "omnivore",
+      "pescatarian"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "post_workout"
+    ],
+    "tags": [
+      "high_protein",
+      "lean"
+    ],
+    "contains": [
+      "shellfish"
+    ],
+    "common_allergens": [
+      "shellfish"
+    ],
+    "protein_g": 24,
+    "carbs_g": 0.2,
+    "fat_g": 0.3,
+    "calories_per_100g": 99
+  },
+  {
+    "id": "food_035",
+    "name": "Sardines",
+    "category": "protein",
+    "diet_types": [
+      "omnivore",
+      "pescatarian"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high_protein",
+      "omega_3"
+    ],
+    "contains": [
+      "fish"
+    ],
+    "common_allergens": [
+      "fish"
+    ],
+    "protein_g": 25,
+    "carbs_g": 0,
+    "fat_g": 11,
+    "calories_per_100g": 208
+  },
+  {
+    "id": "food_036",
+    "name": "Peas",
+    "category": "legume",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "fiber",
+      "protein"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 5.4,
+    "carbs_g": 14.5,
+    "fat_g": 0.4,
+    "calories_per_100g": 84
+  },
+  {
+    "id": "food_037",
+    "name": "Edamame",
+    "category": "soy",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "snack",
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high_protein",
+      "fiber"
+    ],
+    "contains": [
+      "soy"
+    ],
+    "common_allergens": [
+      "soy"
+    ],
+    "protein_g": 11.9,
+    "carbs_g": 8.9,
+    "fat_g": 5.2,
+    "calories_per_100g": 121
+  },
+  {
+    "id": "food_038",
+    "name": "Chia Seeds",
+    "category": "seed",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack"
+    ],
+    "tags": [
+      "fiber",
+      "healthy_fat"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 16.5,
+    "carbs_g": 42.1,
+    "fat_g": 30.7,
+    "calories_per_100g": 486
+  },
+  {
+    "id": "food_039",
+    "name": "Flax Seeds",
+    "category": "seed",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack"
+    ],
+    "tags": [
+      "fiber",
+      "healthy_fat"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 18.3,
+    "carbs_g": 28.9,
+    "fat_g": 42.2,
+    "calories_per_100g": 534
+  },
+  {
+    "id": "food_040",
+    "name": "Dates",
+    "category": "fruit",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "snack",
+      "pre_workout",
+      "post_workout"
+    ],
+    "tags": [
+      "quick_carbs"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 1.8,
+    "carbs_g": 75,
+    "fat_g": 0.2,
+    "calories_per_100g": 282
+  },
+  {
+    "id": "food_041",
+    "name": "Orange",
+    "category": "fruit",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack",
+      "post_workout"
+    ],
+    "tags": [
+      "vitamin_c"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 0.9,
+    "carbs_g": 11.8,
+    "fat_g": 0.1,
+    "calories_per_100g": 47
+  },
+  {
+    "id": "food_042",
+    "name": "Cucumber",
+    "category": "vegetable",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "tags": [
+      "hydrating",
+      "low_calorie"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 0.7,
+    "carbs_g": 3.6,
+    "fat_g": 0.1,
+    "calories_per_100g": 15
+  },
+  {
+    "id": "food_043",
+    "name": "Tomato",
+    "category": "vegetable",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "micronutrients",
+      "low_calorie"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 0.9,
+    "carbs_g": 3.9,
+    "fat_g": 0.2,
+    "calories_per_100g": 18
+  },
+  {
+    "id": "food_044",
+    "name": "Capsicum",
+    "category": "vegetable",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "micronutrients"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 1,
+    "carbs_g": 6,
+    "fat_g": 0.3,
+    "calories_per_100g": 31
+  },
+  {
+    "id": "food_045",
+    "name": "Cauliflower",
+    "category": "vegetable",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "fiber",
+      "low_calorie"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 1.9,
+    "carbs_g": 5,
+    "fat_g": 0.3,
+    "calories_per_100g": 25
+  },
+  {
+    "id": "food_046",
+    "name": "Mushrooms",
+    "category": "vegetable",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "low_calorie",
+      "umami"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 3.1,
+    "carbs_g": 3.3,
+    "fat_g": 0.3,
+    "calories_per_100g": 22
+  },
+  {
+    "id": "food_047",
+    "name": "Whole Wheat Roti",
+    "category": "grain",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "complex_carbs",
+      "fiber"
+    ],
+    "contains": [
+      "gluten"
+    ],
+    "common_allergens": [
+      "gluten"
+    ],
+    "protein_g": 9,
+    "carbs_g": 46,
+    "fat_g": 3,
+    "calories_per_100g": 250
+  },
+  {
+    "id": "food_048",
+    "name": "Dalia",
+    "category": "grain",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "tags": [
+      "complex_carbs",
+      "fiber"
+    ],
+    "contains": [
+      "gluten"
+    ],
+    "common_allergens": [
+      "gluten"
+    ],
+    "protein_g": 12,
+    "carbs_g": 73,
+    "fat_g": 1.5,
+    "calories_per_100g": 342
+  },
+  {
+    "id": "food_049",
+    "name": "Greek Yogurt Low Fat",
+    "category": "dairy",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack",
+      "post_workout"
+    ],
+    "tags": [
+      "high_protein",
+      "low_fat"
+    ],
+    "contains": [
+      "milk"
+    ],
+    "common_allergens": [
+      "milk"
+    ],
+    "protein_g": 10,
+    "carbs_g": 3.6,
+    "fat_g": 0.4,
+    "calories_per_100g": 59
+  },
+  {
+    "id": "food_050",
+    "name": "Protein Milk",
+    "category": "dairy",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "meal_types": [
+      "post_workout",
+      "snack"
+    ],
+    "tags": [
+      "high_protein"
+    ],
+    "contains": [
+      "milk"
+    ],
+    "common_allergens": [
+      "milk"
+    ],
+    "protein_g": 5,
+    "carbs_g": 5,
+    "fat_g": 2,
+    "calories_per_100g": 55
+  },
+  {
+    "id": "food_051",
+    "name": "Hummus",
+    "category": "legume",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "snack",
+      "lunch"
+    ],
+    "tags": [
+      "fiber",
+      "healthy_fat"
+    ],
+    "contains": [
+      "sesame"
+    ],
+    "common_allergens": [
+      "sesame"
+    ],
+    "protein_g": 8,
+    "carbs_g": 14,
+    "fat_g": 9,
+    "calories_per_100g": 166
+  },
+  {
+    "id": "food_052",
+    "name": "Pumpkin Seeds",
+    "category": "seed",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "snack",
+      "breakfast"
+    ],
+    "tags": [
+      "protein",
+      "healthy_fat"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 30,
+    "carbs_g": 10.7,
+    "fat_g": 49,
+    "calories_per_100g": 559
+  },
+  {
+    "id": "food_053",
+    "name": "Walnuts",
+    "category": "nut",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "snack",
+      "breakfast"
+    ],
+    "tags": [
+      "healthy_fat",
+      "omega_3"
+    ],
+    "contains": [
+      "nuts"
+    ],
+    "common_allergens": [
+      "nuts"
+    ],
+    "protein_g": 15,
+    "carbs_g": 13.7,
+    "fat_g": 65,
+    "calories_per_100g": 654
+  },
+  {
+    "id": "food_054",
+    "name": "Cashews",
+    "category": "nut",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "snack"
+    ],
+    "tags": [
+      "healthy_fat"
+    ],
+    "contains": [
+      "nuts"
+    ],
+    "common_allergens": [
+      "nuts"
+    ],
+    "protein_g": 18,
+    "carbs_g": 30,
+    "fat_g": 44,
+    "calories_per_100g": 553
+  },
+  {
+    "id": "food_055",
+    "name": "Black Beans",
+    "category": "legume",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "protein",
+      "fiber"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 8.9,
+    "carbs_g": 23.7,
+    "fat_g": 0.5,
+    "calories_per_100g": 132
+  },
+  {
+    "id": "food_056",
+    "name": "Soy Milk",
+    "category": "soy",
+    "diet_types": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack",
+      "post_workout"
+    ],
+    "tags": [
+      "protein"
+    ],
+    "contains": [
+      "soy"
+    ],
+    "common_allergens": [
+      "soy"
+    ],
+    "protein_g": 3.3,
+    "carbs_g": 6,
+    "fat_g": 1.8,
+    "calories_per_100g": 33
+  },
+  {
+    "id": "food_057",
+    "name": "Corn",
+    "category": "grain",
+    "diet_types": [
+      "omnivore",
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "tags": [
+      "carbs",
+      "fiber"
+    ],
+    "contains": [],
+    "common_allergens": [],
+    "protein_g": 3.4,
+    "carbs_g": 19,
+    "fat_g": 1.5,
+    "calories_per_100g": 86
+  },
+  {
+    "id": "food_058",
+    "name": "Greek Yogurt Bowl",
+    "category": "prepared",
+    "diet_types": [
+      "omnivore",
+      "vegetarian"
+    ],
+    "meal_types": [
+      "breakfast",
+      "snack"
+    ],
+    "tags": [
+      "high_protein"
+    ],
+    "contains": [
+      "milk",
+      "nuts"
+    ],
+    "common_allergens": [
+      "milk",
+      "nuts"
+    ],
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 5,
+    "calories_per_100g": 125
+  }
+]

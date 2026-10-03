@@ -1,0 +1,435 @@
+[
+  {
+    "id": "wt_001",
+    "name": "Beginner Full Body A",
+    "goal": "general_fitness",
+    "experience": "beginner",
+    "muscle_groups": [
+      "chest",
+      "back",
+      "legs",
+      "core"
+    ],
+    "duration_minutes": 45,
+    "equipment": [
+      "bodyweight",
+      "dumbbells"
+    ],
+    "template_exercises": [
+      "ex_001",
+      "ex_011",
+      "ex_030",
+      "ex_045"
+    ]
+  },
+  {
+    "id": "wt_002",
+    "name": "Beginner Full Body B",
+    "goal": "fat_loss",
+    "experience": "beginner",
+    "muscle_groups": [
+      "legs",
+      "chest",
+      "core"
+    ],
+    "duration_minutes": 40,
+    "equipment": [
+      "bodyweight"
+    ],
+    "template_exercises": [
+      "ex_030",
+      "ex_056",
+      "ex_047",
+      "ex_058"
+    ]
+  },
+  {
+    "id": "wt_003",
+    "name": "Upper Body Push",
+    "goal": "muscle_gain",
+    "experience": "intermediate",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "triceps"
+    ],
+    "duration_minutes": 55,
+    "equipment": [
+      "dumbbells",
+      "bench"
+    ],
+    "template_exercises": [
+      "ex_005",
+      "ex_019",
+      "ex_023",
+      "ex_027"
+    ]
+  },
+  {
+    "id": "wt_004",
+    "name": "Upper Body Pull",
+    "goal": "muscle_gain",
+    "experience": "intermediate",
+    "muscle_groups": [
+      "back",
+      "biceps",
+      "forearms"
+    ],
+    "duration_minutes": 55,
+    "equipment": [
+      "dumbbells",
+      "cable"
+    ],
+    "template_exercises": [
+      "ex_013",
+      "ex_012",
+      "ex_022",
+      "ex_050"
+    ]
+  },
+  {
+    "id": "wt_005",
+    "name": "Leg Strength",
+    "goal": "strength",
+    "experience": "intermediate",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "duration_minutes": 60,
+    "equipment": [
+      "barbell",
+      "bench"
+    ],
+    "template_exercises": [
+      "ex_032",
+      "ex_037",
+      "ex_039",
+      "ex_041"
+    ]
+  },
+  {
+    "id": "wt_006",
+    "name": "Leg Hypertrophy",
+    "goal": "muscle_gain",
+    "experience": "intermediate",
+    "muscle_groups": [
+      "legs",
+      "glutes",
+      "calves"
+    ],
+    "duration_minutes": 60,
+    "equipment": [
+      "machine",
+      "dumbbells"
+    ],
+    "template_exercises": [
+      "ex_033",
+      "ex_038",
+      "ex_040",
+      "ex_042"
+    ]
+  },
+  {
+    "id": "wt_007",
+    "name": "Home Upper",
+    "goal": "general_fitness",
+    "experience": "beginner",
+    "muscle_groups": [
+      "chest",
+      "back",
+      "shoulders",
+      "arms"
+    ],
+    "duration_minutes": 40,
+    "equipment": [
+      "bodyweight",
+      "resistance_band"
+    ],
+    "template_exercises": [
+      "ex_001",
+      "ex_052",
+      "ex_019",
+      "ex_026"
+    ]
+  },
+  {
+    "id": "wt_008",
+    "name": "Home Lower",
+    "goal": "general_fitness",
+    "experience": "beginner",
+    "muscle_groups": [
+      "legs",
+      "glutes",
+      "core"
+    ],
+    "duration_minutes": 40,
+    "equipment": [
+      "bodyweight",
+      "resistance_band"
+    ],
+    "template_exercises": [
+      "ex_030",
+      "ex_035",
+      "ex_054",
+      "ex_044"
+    ]
+  },
+  {
+    "id": "wt_009",
+    "name": "Fat Loss Circuit",
+    "goal": "fat_loss",
+    "experience": "intermediate",
+    "muscle_groups": [
+      "full_body",
+      "core"
+    ],
+    "duration_minutes": 35,
+    "equipment": [
+      "bodyweight"
+    ],
+    "template_exercises": [
+      "ex_058",
+      "ex_055",
+      "ex_059",
+      "ex_047"
+    ]
+  },
+  {
+    "id": "wt_010",
+    "name": "Core & Conditioning",
+    "goal": "endurance",
+    "experience": "intermediate",
+    "muscle_groups": [
+      "core",
+      "legs"
+    ],
+    "duration_minutes": 35,
+    "equipment": [
+      "bodyweight"
+    ],
+    "template_exercises": [
+      "ex_047",
+      "ex_048",
+      "ex_055",
+      "ex_057"
+    ]
+  },
+  {
+    "id": "wt_011",
+    "name": "Glute Focus",
+    "goal": "muscle_gain",
+    "experience": "intermediate",
+    "muscle_groups": [
+      "glutes",
+      "legs"
+    ],
+    "duration_minutes": 50,
+    "equipment": [
+      "dumbbells",
+      "bench"
+    ],
+    "template_exercises": [
+      "ex_039",
+      "ex_035",
+      "ex_040",
+      "ex_036"
+    ]
+  },
+  {
+    "id": "wt_012",
+    "name": "Shoulder & Arms",
+    "goal": "muscle_gain",
+    "experience": "intermediate",
+    "muscle_groups": [
+      "shoulders",
+      "biceps",
+      "triceps"
+    ],
+    "duration_minutes": 50,
+    "equipment": [
+      "dumbbells",
+      "cable"
+    ],
+    "template_exercises": [
+      "ex_017",
+      "ex_019",
+      "ex_023",
+      "ex_026"
+    ]
+  },
+  {
+    "id": "wt_013",
+    "name": "Back Strength",
+    "goal": "strength",
+    "experience": "advanced",
+    "muscle_groups": [
+      "back",
+      "biceps"
+    ],
+    "duration_minutes": 60,
+    "equipment": [
+      "barbell",
+      "pull_up_bar"
+    ],
+    "template_exercises": [
+      "ex_009",
+      "ex_014",
+      "ex_011",
+      "ex_024"
+    ]
+  },
+  {
+    "id": "wt_014",
+    "name": "Beginner Strength",
+    "goal": "strength",
+    "experience": "beginner",
+    "muscle_groups": [
+      "legs",
+      "chest",
+      "back"
+    ],
+    "duration_minutes": 50,
+    "equipment": [
+      "dumbbells",
+      "bench"
+    ],
+    "template_exercises": [
+      "ex_031",
+      "ex_061",
+      "ex_062",
+      "ex_013"
+    ]
+  },
+  {
+    "id": "wt_015",
+    "name": "Low Impact Fitness",
+    "goal": "general_fitness",
+    "experience": "beginner",
+    "muscle_groups": [
+      "legs",
+      "core"
+    ],
+    "duration_minutes": 35,
+    "equipment": [
+      "bodyweight"
+    ],
+    "template_exercises": [
+      "ex_054",
+      "ex_044",
+      "ex_045",
+      "ex_048"
+    ]
+  },
+  {
+    "id": "wt_016",
+    "name": "Post-Leg Recovery Upper",
+    "goal": "general_fitness",
+    "experience": "beginner",
+    "muscle_groups": [
+      "chest",
+      "back",
+      "arms"
+    ],
+    "duration_minutes": 40,
+    "equipment": [
+      "dumbbells",
+      "bench"
+    ],
+    "template_exercises": [
+      "ex_062",
+      "ex_063",
+      "ex_013",
+      "ex_023"
+    ]
+  },
+  {
+    "id": "wt_017",
+    "name": "Full Body Strength",
+    "goal": "strength",
+    "experience": "advanced",
+    "muscle_groups": [
+      "legs",
+      "chest",
+      "back",
+      "core"
+    ],
+    "duration_minutes": 65,
+    "equipment": [
+      "barbell",
+      "bench"
+    ],
+    "template_exercises": [
+      "ex_032",
+      "ex_004",
+      "ex_014",
+      "ex_047"
+    ]
+  },
+  {
+    "id": "wt_018",
+    "name": "Hypertrophy Full Body",
+    "goal": "muscle_gain",
+    "experience": "intermediate",
+    "muscle_groups": [
+      "chest",
+      "back",
+      "legs",
+      "shoulders"
+    ],
+    "duration_minutes": 60,
+    "equipment": [
+      "dumbbells",
+      "cable"
+    ],
+    "template_exercises": [
+      "ex_005",
+      "ex_013",
+      "ex_033",
+      "ex_019"
+    ]
+  },
+  {
+    "id": "wt_019",
+    "name": "Endurance Builder",
+    "goal": "endurance",
+    "experience": "intermediate",
+    "muscle_groups": [
+      "legs",
+      "core",
+      "shoulders"
+    ],
+    "duration_minutes": 40,
+    "equipment": [
+      "bodyweight",
+      "machine"
+    ],
+    "template_exercises": [
+      "ex_055",
+      "ex_056",
+      "ex_047",
+      "ex_058"
+    ]
+  },
+  {
+    "id": "wt_020",
+    "name": "Minimal Equipment Full Body",
+    "goal": "general_fitness",
+    "experience": "beginner",
+    "muscle_groups": [
+      "full_body"
+    ],
+    "duration_minutes": 45,
+    "equipment": [
+      "bodyweight",
+      "dumbbells"
+    ],
+    "template_exercises": [
+      "ex_030",
+      "ex_062",
+      "ex_063",
+      "ex_044",
+      "ex_047"
+    ]
+  }
+]

@@ -1,0 +1,1736 @@
+[
+  {
+    "id": "ex_001",
+    "name": "Push-Up",
+    "muscle_group": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "horizontal_push",
+    "goal_tags": [
+      "muscle_gain",
+      "fat_loss",
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_002",
+    "name": "Incline Push-Up",
+    "muscle_group": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight",
+      "bench"
+    ],
+    "difficulty": "beginner",
+    "movement": "horizontal_push",
+    "goal_tags": [
+      "general_fitness",
+      "fat_loss"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_003",
+    "name": "Decline Push-Up",
+    "muscle_group": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "movement": "horizontal_push",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_004",
+    "name": "Bench Press",
+    "muscle_group": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "barbell",
+      "bench"
+    ],
+    "difficulty": "intermediate",
+    "movement": "horizontal_push",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": false,
+    "injury_caution": [
+      "shoulder"
+    ]
+  },
+  {
+    "id": "ex_005",
+    "name": "Incline Dumbbell Press",
+    "muscle_group": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "dumbbells",
+      "bench"
+    ],
+    "difficulty": "intermediate",
+    "movement": "incline_push",
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_006",
+    "name": "Dumbbell Fly",
+    "muscle_group": "chest",
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "dumbbells",
+      "bench"
+    ],
+    "difficulty": "intermediate",
+    "movement": "horizontal_adduction",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": false,
+    "injury_caution": [
+      "shoulder"
+    ]
+  },
+  {
+    "id": "ex_007",
+    "name": "Cable Crossover",
+    "muscle_group": "chest",
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "cable"
+    ],
+    "difficulty": "intermediate",
+    "movement": "horizontal_adduction",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_008",
+    "name": "Chest Press Machine",
+    "muscle_group": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "machine"
+    ],
+    "difficulty": "beginner",
+    "movement": "horizontal_push",
+    "goal_tags": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_009",
+    "name": "Pull-Up",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "biceps",
+      "forearms"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "advanced",
+    "movement": "vertical_pull",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_010",
+    "name": "Assisted Pull-Up",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "biceps",
+      "forearms"
+    ],
+    "equipment": [
+      "machine"
+    ],
+    "difficulty": "beginner",
+    "movement": "vertical_pull",
+    "goal_tags": [
+      "strength",
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_011",
+    "name": "Lat Pulldown",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "biceps"
+    ],
+    "equipment": [
+      "cable",
+      "machine"
+    ],
+    "difficulty": "beginner",
+    "movement": "vertical_pull",
+    "goal_tags": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_012",
+    "name": "Seated Cable Row",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "biceps",
+      "rear_delts"
+    ],
+    "equipment": [
+      "cable"
+    ],
+    "difficulty": "beginner",
+    "movement": "horizontal_pull",
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_013",
+    "name": "One-Arm Dumbbell Row",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "biceps"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "movement": "horizontal_pull",
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_014",
+    "name": "Barbell Row",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "biceps",
+      "rear_delts"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "movement": "horizontal_pull",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": false,
+    "injury_caution": [
+      "lower_back"
+    ]
+  },
+  {
+    "id": "ex_015",
+    "name": "Straight-Arm Pulldown",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "lats"
+    ],
+    "equipment": [
+      "cable"
+    ],
+    "difficulty": "beginner",
+    "movement": "shoulder_extension",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_016",
+    "name": "Face Pull",
+    "muscle_group": "shoulders",
+    "secondary_muscles": [
+      "rear_delts",
+      "upper_back"
+    ],
+    "equipment": [
+      "cable"
+    ],
+    "difficulty": "beginner",
+    "movement": "horizontal_pull",
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_017",
+    "name": "Dumbbell Shoulder Press",
+    "muscle_group": "shoulders",
+    "secondary_muscles": [
+      "triceps"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "movement": "vertical_push",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": [
+      "shoulder"
+    ]
+  },
+  {
+    "id": "ex_018",
+    "name": "Barbell Overhead Press",
+    "muscle_group": "shoulders",
+    "secondary_muscles": [
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "movement": "vertical_push",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": false,
+    "injury_caution": [
+      "shoulder"
+    ]
+  },
+  {
+    "id": "ex_019",
+    "name": "Dumbbell Lateral Raise",
+    "muscle_group": "shoulders",
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "movement": "shoulder_abduction",
+    "goal_tags": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_020",
+    "name": "Front Raise",
+    "muscle_group": "shoulders",
+    "secondary_muscles": [
+      "upper_chest"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "movement": "shoulder_flexion",
+    "goal_tags": [
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_021",
+    "name": "Reverse Fly",
+    "muscle_group": "shoulders",
+    "secondary_muscles": [
+      "rear_delts",
+      "upper_back"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "movement": "horizontal_abduction",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_022",
+    "name": "Dumbbell Curl",
+    "muscle_group": "biceps",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "movement": "elbow_flexion",
+    "goal_tags": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_023",
+    "name": "Hammer Curl",
+    "muscle_group": "biceps",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "movement": "elbow_flexion",
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_024",
+    "name": "Barbell Curl",
+    "muscle_group": "biceps",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "movement": "elbow_flexion",
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_025",
+    "name": "Cable Curl",
+    "muscle_group": "biceps",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": [
+      "cable"
+    ],
+    "difficulty": "beginner",
+    "movement": "elbow_flexion",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_026",
+    "name": "Triceps Pushdown",
+    "muscle_group": "triceps",
+    "secondary_muscles": [],
+    "equipment": [
+      "cable"
+    ],
+    "difficulty": "beginner",
+    "movement": "elbow_extension",
+    "goal_tags": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_027",
+    "name": "Overhead Triceps Extension",
+    "muscle_group": "triceps",
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "movement": "elbow_extension",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_028",
+    "name": "Close-Grip Push-Up",
+    "muscle_group": "triceps",
+    "secondary_muscles": [
+      "chest",
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "horizontal_push",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_029",
+    "name": "Bench Dips",
+    "muscle_group": "triceps",
+    "secondary_muscles": [
+      "chest",
+      "shoulders"
+    ],
+    "equipment": [
+      "bench"
+    ],
+    "difficulty": "intermediate",
+    "movement": "elbow_extension",
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "home_friendly": false,
+    "injury_caution": [
+      "shoulder"
+    ]
+  },
+  {
+    "id": "ex_030",
+    "name": "Bodyweight Squat",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "squat",
+    "goal_tags": [
+      "general_fitness",
+      "fat_loss",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_031",
+    "name": "Goblet Squat",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "movement": "squat",
+    "goal_tags": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_032",
+    "name": "Barbell Back Squat",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "movement": "squat",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": false,
+    "injury_caution": [
+      "knee",
+      "lower_back"
+    ]
+  },
+  {
+    "id": "ex_033",
+    "name": "Leg Press",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes",
+      "calves"
+    ],
+    "equipment": [
+      "machine"
+    ],
+    "difficulty": "beginner",
+    "movement": "squat",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_034",
+    "name": "Walking Lunge",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight",
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "movement": "lunge",
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_035",
+    "name": "Bulgarian Split Squat",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight",
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "movement": "single_leg_squat",
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_036",
+    "name": "Romanian Deadlift",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": [
+      "barbell",
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "movement": "hip_hinge",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": false,
+    "injury_caution": [
+      "lower_back"
+    ]
+  },
+  {
+    "id": "ex_037",
+    "name": "Leg Curl",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "hamstrings"
+    ],
+    "equipment": [
+      "machine"
+    ],
+    "difficulty": "beginner",
+    "movement": "knee_flexion",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_038",
+    "name": "Leg Extension",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "quadriceps"
+    ],
+    "equipment": [
+      "machine"
+    ],
+    "difficulty": "beginner",
+    "movement": "knee_extension",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_039",
+    "name": "Hip Thrust",
+    "muscle_group": "glutes",
+    "secondary_muscles": [
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "barbell",
+      "bench"
+    ],
+    "difficulty": "intermediate",
+    "movement": "hip_extension",
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_040",
+    "name": "Glute Bridge",
+    "muscle_group": "glutes",
+    "secondary_muscles": [
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "hip_extension",
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_041",
+    "name": "Calf Raise",
+    "muscle_group": "calves",
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "plantar_flexion",
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_042",
+    "name": "Seated Calf Raise",
+    "muscle_group": "calves",
+    "secondary_muscles": [],
+    "equipment": [
+      "machine"
+    ],
+    "difficulty": "beginner",
+    "movement": "plantar_flexion",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_043",
+    "name": "Plank",
+    "muscle_group": "core",
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "anti_extension",
+    "goal_tags": [
+      "general_fitness",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_044",
+    "name": "Side Plank",
+    "muscle_group": "core",
+    "secondary_muscles": [
+      "obliques"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "anti_lateral_flexion",
+    "goal_tags": [
+      "general_fitness",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_045",
+    "name": "Dead Bug",
+    "muscle_group": "core",
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "core_stability",
+    "goal_tags": [
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_046",
+    "name": "Bird Dog",
+    "muscle_group": "core",
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "core_stability",
+    "goal_tags": [
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_047",
+    "name": "Mountain Climber",
+    "muscle_group": "core",
+    "secondary_muscles": [
+      "shoulders",
+      "legs"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "movement": "dynamic_core",
+    "goal_tags": [
+      "fat_loss",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_048",
+    "name": "Russian Twist",
+    "muscle_group": "core",
+    "secondary_muscles": [
+      "obliques"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "movement": "rotation",
+    "goal_tags": [
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_049",
+    "name": "Farmer Carry",
+    "muscle_group": "forearms",
+    "secondary_muscles": [
+      "core",
+      "shoulders"
+    ],
+    "equipment": [
+      "dumbbells",
+      "kettlebell"
+    ],
+    "difficulty": "intermediate",
+    "movement": "carry",
+    "goal_tags": [
+      "strength",
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_050",
+    "name": "Wrist Curl",
+    "muscle_group": "forearms",
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "movement": "wrist_flexion",
+    "goal_tags": [
+      "general_fitness",
+      "strength"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_051",
+    "name": "Kettlebell Swing",
+    "muscle_group": "glutes",
+    "secondary_muscles": [
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "intermediate",
+    "movement": "hip_hinge",
+    "goal_tags": [
+      "endurance",
+      "fat_loss",
+      "strength"
+    ],
+    "home_friendly": false,
+    "injury_caution": [
+      "lower_back"
+    ]
+  },
+  {
+    "id": "ex_052",
+    "name": "Resistance Band Row",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "biceps"
+    ],
+    "equipment": [
+      "resistance_band"
+    ],
+    "difficulty": "beginner",
+    "movement": "horizontal_pull",
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_053",
+    "name": "Resistance Band Chest Press",
+    "muscle_group": "chest",
+    "secondary_muscles": [
+      "triceps"
+    ],
+    "equipment": [
+      "resistance_band"
+    ],
+    "difficulty": "beginner",
+    "movement": "horizontal_push",
+    "goal_tags": [
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_054",
+    "name": "Band Lateral Walk",
+    "muscle_group": "glutes",
+    "secondary_muscles": [
+      "legs"
+    ],
+    "equipment": [
+      "resistance_band"
+    ],
+    "difficulty": "beginner",
+    "movement": "hip_abduction",
+    "goal_tags": [
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_055",
+    "name": "Step-Up",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "bodyweight",
+      "bench"
+    ],
+    "difficulty": "beginner",
+    "movement": "step",
+    "goal_tags": [
+      "general_fitness",
+      "fat_loss"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_056",
+    "name": "Wall Sit",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "isometric_squat",
+    "goal_tags": [
+      "endurance",
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_057",
+    "name": "Jump Squat",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes",
+      "calves"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "movement": "squat_jump",
+    "goal_tags": [
+      "endurance",
+      "fat_loss"
+    ],
+    "home_friendly": true,
+    "injury_caution": [
+      "knee"
+    ]
+  },
+  {
+    "id": "ex_058",
+    "name": "Burpee",
+    "muscle_group": "full_body",
+    "secondary_muscles": [
+      "chest",
+      "legs",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "advanced",
+    "movement": "full_body",
+    "goal_tags": [
+      "fat_loss",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_059",
+    "name": "High Knees",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "cardio",
+    "goal_tags": [
+      "fat_loss",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_060",
+    "name": "Jumping Jack",
+    "muscle_group": "full_body",
+    "secondary_muscles": [
+      "legs",
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "cardio",
+    "goal_tags": [
+      "fat_loss",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_061",
+    "name": "Bodyweight Reverse Lunge",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "lunge",
+    "goal_tags": [
+      "general_fitness",
+      "fat_loss"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_062",
+    "name": "Dumbbell Deadlift",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "movement": "hip_hinge",
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_063",
+    "name": "Dumbbell Row",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "biceps"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "movement": "horizontal_pull",
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_064",
+    "name": "Dumbbell Chest Press",
+    "muscle_group": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "movement": "horizontal_push",
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_065",
+    "name": "Dumbbell Pullover",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "chest"
+    ],
+    "equipment": [
+      "dumbbells",
+      "bench"
+    ],
+    "difficulty": "intermediate",
+    "movement": "shoulder_extension",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_066",
+    "name": "Arnold Press",
+    "muscle_group": "shoulders",
+    "secondary_muscles": [
+      "triceps"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "movement": "vertical_push",
+    "goal_tags": [
+      "muscle_gain",
+      "strength"
+    ],
+    "home_friendly": true,
+    "injury_caution": [
+      "shoulder"
+    ]
+  },
+  {
+    "id": "ex_067",
+    "name": "Cable Lateral Raise",
+    "muscle_group": "shoulders",
+    "secondary_muscles": [],
+    "equipment": [
+      "cable"
+    ],
+    "difficulty": "intermediate",
+    "movement": "shoulder_abduction",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_068",
+    "name": "Preacher Curl",
+    "muscle_group": "biceps",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": [
+      "machine",
+      "bench"
+    ],
+    "difficulty": "intermediate",
+    "movement": "elbow_flexion",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_069",
+    "name": "Skull Crusher",
+    "muscle_group": "triceps",
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "barbell",
+      "bench"
+    ],
+    "difficulty": "intermediate",
+    "movement": "elbow_extension",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": false,
+    "injury_caution": [
+      "elbow"
+    ]
+  },
+  {
+    "id": "ex_070",
+    "name": "Cable Triceps Extension",
+    "muscle_group": "triceps",
+    "secondary_muscles": [],
+    "equipment": [
+      "cable"
+    ],
+    "difficulty": "beginner",
+    "movement": "elbow_extension",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_071",
+    "name": "Hack Squat",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "machine"
+    ],
+    "difficulty": "intermediate",
+    "movement": "squat",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_072",
+    "name": "Smith Machine Squat",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "machine"
+    ],
+    "difficulty": "intermediate",
+    "movement": "squat",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_073",
+    "name": "Good Morning",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "movement": "hip_hinge",
+    "goal_tags": [
+      "strength"
+    ],
+    "home_friendly": false,
+    "injury_caution": [
+      "lower_back"
+    ]
+  },
+  {
+    "id": "ex_074",
+    "name": "Cable Pull-Through",
+    "muscle_group": "glutes",
+    "secondary_muscles": [
+      "hamstrings"
+    ],
+    "equipment": [
+      "cable"
+    ],
+    "difficulty": "beginner",
+    "movement": "hip_extension",
+    "goal_tags": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_075",
+    "name": "Cable Kickback",
+    "muscle_group": "glutes",
+    "secondary_muscles": [],
+    "equipment": [
+      "cable"
+    ],
+    "difficulty": "beginner",
+    "movement": "hip_extension",
+    "goal_tags": [
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_076",
+    "name": "Ab Wheel Rollout",
+    "muscle_group": "core",
+    "secondary_muscles": [
+      "lats",
+      "shoulders"
+    ],
+    "equipment": [
+      "ab_wheel"
+    ],
+    "difficulty": "advanced",
+    "movement": "anti_extension",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": false,
+    "injury_caution": [
+      "lower_back"
+    ]
+  },
+  {
+    "id": "ex_077",
+    "name": "Hanging Knee Raise",
+    "muscle_group": "core",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "intermediate",
+    "movement": "hip_flexion",
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_078",
+    "name": "Reverse Crunch",
+    "muscle_group": "core",
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "movement": "trunk_flexion",
+    "goal_tags": [
+      "general_fitness"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_079",
+    "name": "Bicycle Crunch",
+    "muscle_group": "core",
+    "secondary_muscles": [
+      "obliques"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "movement": "dynamic_core",
+    "goal_tags": [
+      "general_fitness",
+      "fat_loss"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_080",
+    "name": "Incline Walk",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "treadmill"
+    ],
+    "difficulty": "beginner",
+    "movement": "cardio",
+    "goal_tags": [
+      "fat_loss",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_081",
+    "name": "Cycling",
+    "muscle_group": "legs",
+    "secondary_muscles": [],
+    "equipment": [
+      "machine"
+    ],
+    "difficulty": "beginner",
+    "movement": "cardio",
+    "goal_tags": [
+      "fat_loss",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_082",
+    "name": "Rowing Machine",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "legs",
+      "core"
+    ],
+    "equipment": [
+      "machine"
+    ],
+    "difficulty": "intermediate",
+    "movement": "cardio",
+    "goal_tags": [
+      "fat_loss",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_083",
+    "name": "Stair Climber",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "machine"
+    ],
+    "difficulty": "intermediate",
+    "movement": "cardio",
+    "goal_tags": [
+      "fat_loss",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_084",
+    "name": "Battle Rope",
+    "muscle_group": "shoulders",
+    "secondary_muscles": [
+      "core",
+      "arms"
+    ],
+    "equipment": [
+      "battle_rope"
+    ],
+    "difficulty": "intermediate",
+    "movement": "cardio",
+    "goal_tags": [
+      "fat_loss",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_085",
+    "name": "Sled Push",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "sled"
+    ],
+    "difficulty": "intermediate",
+    "movement": "push",
+    "goal_tags": [
+      "strength",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_086",
+    "name": "Sled Pull",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "back",
+      "glutes"
+    ],
+    "equipment": [
+      "sled"
+    ],
+    "difficulty": "intermediate",
+    "movement": "pull",
+    "goal_tags": [
+      "strength",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_087",
+    "name": "Kettlebell Goblet Squat",
+    "muscle_group": "legs",
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "beginner",
+    "movement": "squat",
+    "goal_tags": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_088",
+    "name": "Kettlebell Row",
+    "muscle_group": "back",
+    "secondary_muscles": [
+      "biceps"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "intermediate",
+    "movement": "horizontal_pull",
+    "goal_tags": [
+      "strength",
+      "muscle_gain"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  },
+  {
+    "id": "ex_089",
+    "name": "Kettlebell Clean",
+    "muscle_group": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "legs",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "advanced",
+    "movement": "full_body",
+    "goal_tags": [
+      "strength",
+      "endurance"
+    ],
+    "home_friendly": true,
+    "injury_caution": []
+  }
+]
