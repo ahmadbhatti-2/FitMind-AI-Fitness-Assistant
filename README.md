@@ -1,74 +1,151 @@
 # FitMind
 
-FitMind is a full-stack fitness coaching demo. Each account has a fitness profile, a workout and meal log, progress measurements, and personalized recommendations. Recommendation endpoints use the workout and meal catalog with the signed-in user's profile and history. The AI Coach uses Gemini and receives the signed-in user's profile and recent workout context.
+AI-powered personalized fitness recommendations and coaching.
+
+FitMind is a full-stack fitness application that brings workout planning, nutrition recommendations, progress tracking, and an AI fitness coach into one experience. Recommendations use a member's profile, preferences, equipment, recorded injuries, and recent activity alongside a curated fitness catalog.
+
+## Technology
+
+- React 19 and Vite for the web application
+- Python 3.11+ and FastAPI for the API
+- PostgreSQL and SQLAlchemy for application data
+- LangGraph and LangChain for the AI coach workflow
+- Google Gemini for conversational coaching
+- JSON catalogs for workout, exercise, food, and meal data
+
+## Architecture
+
+```text
+Member
+  |
+  v
+React web application
+  |
+  v
+FastAPI
+  |-- Authentication and profile routes
+  |-- Workout and nutrition recommendation routes
+  |-- Progress and feedback routes
+  |
+  `-- AI coach route
+        |
+        v
+      LangGraph workflow
+        |-- Loads the member profile, workout history, and feedback
+        |-- Calls workout, meal, progress, and history tools as needed
+        |-- Applies recovery and safety checks
+        `-- Gemini generates the conversational response
+              |
+              v
+        PostgreSQL and fitness JSON catalogs
+```
+
+The workout and meal recommendation endpoints use the project's catalog and recommendation rules. The AI coach uses LangGraph and Gemini, with tools that retrieve member-specific context and fitness recommendations.
+
+## Features
+
+- Account registration and sign-in with hashed passwords and expiring API tokens
+- Profile-aware workout recommendations using goals, experience, equipment, recent activity, and recorded injuries
+- Meal recommendations that consider dietary preferences, goals, logged meals, and recorded allergens
+- Workout and meal history, feedback, progress measurements, and consistency summaries
+- AI coach conversations grounded in the signed-in member's profile and recent workout history
+- Responsive dashboard and navigation for desktop and mobile
 
 ## Requirements
 
 - Python 3.11 or newer
-- Node.js 20.19+ or 22.12+
+- Node.js 20.19 or newer, or 22.12 or newer
 - PostgreSQL
-- A Google AI Studio API key to use AI Coach
+- Google AI Studio API key for AI coach conversations
 
-## First-time setup (Windows PowerShell)
+## Local setup
 
-From the project root:
+Run these commands from the repository root in Windows PowerShell.
+
+### Install dependencies
 
 ```powershell
 py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r .\FitMind\requirements-dev.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
 npm --prefix .\frontend install
-Copy-Item .\FitMind\.env.example .\FitMind\.env
+Copy-Item .env.example .env
 ```
 
-Edit `FitMind/.env` with your PostgreSQL connection string and Google AI key. Create a PostgreSQL database named `fitmind` first. To initialize an empty database, run:
+Edit `.env` and set `DATABASE_URL` to your local PostgreSQL connection. For example:
+
+```dotenv
+DATABASE_URL=postgresql://postgres:your_password@localhost:5432/fitmind_db
+GOOGLE_API_KEY=your-google-ai-studio-key
+```
+
+Create the `fitmind_db` database before starting the API. With PostgreSQL command-line tools installed, one option is:
 
 ```powershell
-psql $env:DATABASE_URL -f .\FitMind\database\schema.sql
+createdb -U postgres fitmind_db
 ```
 
-The schema command is for a new database; do not rerun it over an existing schema. Keep `.env` private and do not commit real credentials.
-
-## Run locally
-
-Open two terminals at the project root.
-
-Terminal 1 — API:
+Initialize a new database with the project schema:
 
 ```powershell
-.\.venv\Scripts\python.exe -m uvicorn backend.app.main:app --app-dir FitMind --reload --host 127.0.0.1 --port 8000
+psql "$env:DATABASE_URL" -f .\database\schema.sql
 ```
 
-Terminal 2 — frontend:
+Run the schema command only when creating a new, empty database. Do not run it again against a database that already has the schema. Keep `.env` private and never commit real credentials.
+
+The `GOOGLE_API_KEY` is needed for AI coach responses. Set it in `.env` before using that feature.
+
+## Run the application
+
+Start the API and web application in separate PowerShell terminals, both from the repository root.
+
+API:
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
+```
+
+Web application:
 
 ```powershell
 npm run dev
 ```
 
-Open the Vite URL printed by the frontend terminal (normally `http://localhost:5173`). Sign up for an account and finish setting your profile. The API health check is `http://127.0.0.1:8000/`; interactive API documentation is at `http://127.0.0.1:8000/docs`.
+Open the local URL printed by Vite, normally `http://localhost:5173`. The API health endpoint is `http://127.0.0.1:8000/`, and interactive API documentation is available at `http://127.0.0.1:8000/docs`.
 
-To use a different API URL, set `VITE_API_BASE_URL` before starting Vite, for example `$env:VITE_API_BASE_URL = "http://127.0.0.1:8000"`.
+The frontend uses `http://127.0.0.1:8000` by default. To use another API URL, set `VITE_API_BASE_URL` before starting Vite:
 
-## Quality checks
+```powershell
+$env:VITE_API_BASE_URL = "http://127.0.0.1:8000"
+npm run dev
+```
+
+## Checks
+
+Run the frontend production build and linter from the repository root:
 
 ```powershell
 npm run build
 npm run lint
 ```
 
-Python recommendation tests are in `FitMind/tests/`. From the project root, run:
+Run the Python test suite:
 
 ```powershell
-Set-Location .\FitMind
-..\.venv\Scripts\python.exe -m pytest .\tests
+.\.venv\Scripts\python.exe -m pytest .\tests
 ```
 
-## Main features
+## Project structure
 
-- Account registration and sign-in with hashed passwords and expiring API tokens.
-- Profile-aware workout choices that consider experience, equipment, recent workouts, and recorded injuries.
-- Meal suggestions filtered by dietary preference, goal, logged meals, and recorded allergens.
-- Workout completion/rest-day logging, meal logging, feedback, weight history, and progress summaries.
-- Gemini-powered coach chat that loads the active user's profile and workout history for each request.
-- Responsive dashboard and navigation for desktop and mobile.
+```text
+backend/       FastAPI routes, authentication, and database models
+agent/         LangGraph workflow and member-context tools
+recommendation/Workout and meal recommendation rules
+database/      PostgreSQL schema
+data/          Static exercise, food, workout, and meal catalogs
+frontend/      React application
+tests/         Python tests
+```
 
-FitMind is an educational project, not a medical product. Its recommendations do not replace advice from qualified health professionals.
+## Scope
+
+FitMind is an educational fitness project, not a medical product. Its recommendations do not replace advice from qualified health professionals.
