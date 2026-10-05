@@ -60,7 +60,13 @@ The workout and meal recommendation endpoints use the project's catalog and reco
 
 ## Local setup
 
-Run these commands from the repository root in Windows PowerShell.
+Run these commands in Windows PowerShell from the `FitMind` repository root: the folder containing `backend\`, `frontend\`, and `requirements-dev.txt`. If your terminal is currently in the parent `AI Fitness Recommendation Agent` folder, first run:
+
+```powershell
+Set-Location .\FitMind
+```
+
+Create `.venv` from the `FitMind` folder so the Python commands below can find it. Do not run `py -m venv .venv` from the parent folder.
 
 ### Install dependencies
 
@@ -96,7 +102,7 @@ The `GOOGLE_API_KEY` is needed for AI coach responses. Set it in `.env` before u
 
 ## Run the application
 
-Start the API and web application in separate PowerShell terminals, both from the repository root.
+Start the API and web application in separate PowerShell terminals, both from the `FitMind` repository root (the folder containing `backend\` and `frontend\`). If a terminal starts in the parent folder, run `Set-Location .\FitMind` before starting either service.
 
 API:
 
