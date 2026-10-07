@@ -6,6 +6,6 @@ This data folder intentionally contains only four JSON files:
 3. workout_templates.json
 4. meal_templates.json
 
-These files are static reference knowledge for the AI Fitness Agent.
+These files are reference data for FitMind's recommendation engine.
 User-specific profile, workout history, meal history, feedback, and progress belong in the database.
-The agent should use tools/rules to retrieve and combine this knowledge rather than treating these files as ML training data.
+The engine combines exercises dynamically into weekly sessions and portions safe food combinations using catalog nutrition values. The catalog is not ML training data.

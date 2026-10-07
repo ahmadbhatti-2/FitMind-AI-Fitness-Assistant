@@ -20,6 +20,8 @@ export default function Workout() {
   const { user } = useAuth();
   const [workout, setWorkout] = useState(null);
   const [history, setHistory] = useState([]);
+  const [performance, setPerformance] = useState({});
+  const [sessionEffort, setSessionEffort] = useState('moderate');
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
@@ -29,6 +31,7 @@ export default function Workout() {
     try {
       const [recommendation, log] = await fetchWorkoutData(user.user_id);
       setWorkout(recommendation.data);
+      setPerformance({});
       setHistory(log.data);
     } catch (loadError) {
       setError(requestError(loadError));
@@ -43,6 +46,7 @@ export default function Workout() {
       .then(([recommendation, log]) => {
         if (!active) return;
         setWorkout(recommendation.data);
+        setPerformance({});
         setHistory(log.data);
       })
       .catch((loadError) => {
@@ -60,11 +64,29 @@ export default function Workout() {
     setError('');
     setNotice('');
     try {
+      const loggedPerformance = Object.fromEntries(
+        Object.entries(performance)
+          .map(([exerciseId, values]) => {
+            const record = {};
+            ['sets', 'reps', 'weight_kg'].forEach((field) => {
+              const value = values[field];
+              if (value !== '' && value !== undefined && value !== null) {
+                record[field] = Number(value);
+              }
+            });
+            if (values.effort) record.effort = values.effort;
+            return [exerciseId, record];
+          })
+          .filter(([, record]) => Object.keys(record).length > 0),
+      );
       await api.post(apiEndpoints.getWorkoutHistory(user.user_id), {
         template_id: workout.id,
         muscle_group: workout.muscle_groups?.join(', ') || 'full_body',
         status,
-        difficulty_felt: workout.difficulty || 'moderate',
+        difficulty_felt: sessionEffort,
+        ...(status === 'completed' && Object.keys(loggedPerformance).length
+          ? { performance: loggedPerformance }
+          : {}),
       });
       setNotice(status === 'completed' ? 'Workout saved. Great work showing up.' : 'Rest day saved to your training history.');
       await loadWorkout();
@@ -107,7 +129,11 @@ export default function Workout() {
           {workout.safety_note && <p className="safety-note"><CircleAlert size={15} /> {workout.safety_note} Stop if you feel pain and seek professional medical guidance for health concerns.</p>}
 
           <section className="content-card">
-            <div className="content-card-heading"><div><span className="eyebrow">YOUR ROUTINE</span><h2>{workout.exercises?.length || 0} exercises</h2></div><span className="subtle-label">Rest as needed between sets</span></div>
+            <div className="content-card-heading"><div><span className="eyebrow">YOUR ROUTINE</span><h2>{workout.exercises?.length || 0} exercises</h2></div><label className="session-effort-control">Overall effort
+              <select aria-label="Overall workout effort" value={sessionEffort} onChange={(event) => setSessionEffort(event.target.value)}>
+                <option value="easy">Easy</option><option value="moderate">Moderate</option><option value="hard">Hard</option>
+              </select>
+            </label></div>
             {workout.exercises?.length ? (
               <div className="exercise-list">
                 {workout.exercises.map((exercise, index) => (
@@ -116,11 +142,86 @@ export default function Workout() {
                     {exerciseImage(exercise.name) && <img className="exercise-image" src={exerciseImage(exercise.name)} alt={exercise.name} loading="lazy" onError={(event) => { event.currentTarget.hidden = true; }} />}
                     <div className="exercise-main"><strong>{exercise.name}</strong><span>{exercise.description || 'Move with control and use a comfortable range of motion.'}</span></div>
                     <div className="exercise-prescription"><span><b>{exercise.sets || 3}</b> sets</span><span><b>{exercise.reps || '8–12'}</b> reps</span><span><b>{exercise.rest || '60 sec'}</b> rest</span></div>
+                    <div className="performance-entry">
+                      <label>Sets completed
+                        <input
+                          aria-label={`${exercise.name} sets completed`}
+                          type="number"
+                          min="1"
+                          max="10"
+                          value={performance[exercise.id]?.sets ?? exercise.sets ?? ''}
+                          onChange={(event) => setPerformance((current) => ({
+                            ...current,
+                            [exercise.id]: { ...current[exercise.id], sets: event.target.value },
+                          }))}
+                        />
+                      </label>
+                      <label>Top reps
+                        <input
+                          aria-label={`${exercise.name} reps completed`}
+                          type="number"
+                          min="0"
+                          max="100"
+                          placeholder="Optional"
+                          value={performance[exercise.id]?.reps ?? ''}
+                          onChange={(event) => setPerformance((current) => ({
+                            ...current,
+                            [exercise.id]: { ...current[exercise.id], reps: event.target.value },
+                          }))}
+                        />
+                      </label>
+                      <label>Load (kg)
+                        <input
+                          aria-label={`${exercise.name} load in kilograms`}
+                          type="number"
+                          min="0"
+                          step="0.5"
+                          placeholder="Bodyweight/optional"
+                          value={performance[exercise.id]?.weight_kg ?? exercise.weight_kg ?? ''}
+                          onChange={(event) => setPerformance((current) => ({
+                            ...current,
+                            [exercise.id]: { ...current[exercise.id], weight_kg: event.target.value },
+                          }))}
+                        />
+                      </label>
+                      <label>Effort
+                        <select
+                          aria-label={`${exercise.name} effort`}
+                          value={performance[exercise.id]?.effort ?? 'moderate'}
+                          onChange={(event) => setPerformance((current) => ({
+                            ...current,
+                            [exercise.id]: { ...current[exercise.id], effort: event.target.value },
+                          }))}
+                        >
+                          <option value="easy">Easy</option>
+                          <option value="moderate">Moderate</option>
+                          <option value="hard">Hard</option>
+                        </select>
+                      </label>
+                      {exercise.progression && <span className="subtle-label">{exercise.progression}</span>}
+                    </div>
                   </article>
                 ))}
               </div>
-            ) : <p className="empty-state">No exercises match your current profile. Add the equipment you have or update your training preferences.</p>}
+            ) : workout.is_recovery_day
+              ? <p className="empty-state">Today is a planned recovery day. Gentle movement is optional; prioritize rest and stop if anything hurts.</p>
+              : <p className="empty-state">No exercises match your current profile. Add the equipment you have or update your training preferences.</p>}
           </section>
+
+          {workout.weekly_schedule?.length > 0 && (
+            <section className="content-card">
+              <div className="content-card-heading"><div><span className="eyebrow">YOUR TRAINING WEEK</span><h2>Weekly schedule</h2></div><span className="subtle-label">Built around your selected training days</span></div>
+              <div className="weekly-schedule">
+                {workout.weekly_schedule.map((day) => (
+                  <article className={`weekly-schedule-day ${day.day_index === workout.day_index ? 'is-today' : ''}`} key={day.day}>
+                    <strong>{day.day}</strong>
+                    <span>{day.title}</span>
+                    <small>{day.is_rest_day ? 'Recovery' : `${day.exercises.length} exercises · ${day.muscle_groups.join(', ')}`}</small>
+                  </article>
+                ))}
+              </div>
+            </section>
+          )}
 
           <div className="action-row">
             <button className="button button-primary" type="button" disabled={saving || alreadyLoggedToday} onClick={() => logWorkout(workout.is_recovery_day ? 'skipped' : 'completed')}>

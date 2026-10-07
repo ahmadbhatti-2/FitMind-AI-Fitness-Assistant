@@ -20,6 +20,7 @@ TOOL_DECISION_PROMPT = """
 Analyze the user's request and determine which tool is needed.
 - For workout suggestions -> use recommend_workout
 - For diet/meal suggestions -> use recommend_meal
+- For a full-day meal plan or daily calorie/macronutrient targets -> use recommend_daily_meal_plan
 - For profile updates -> use update_user_profile
 - For progress checks -> use get_user_progress
 - For history checks -> use get_workout_history or get_meal_history

@@ -1138,3 +1138,58 @@ body {
   .exercise-main span { font-size: 9px; }
   .exercise-prescription { font-size: 9px; }
 }
+
+.performance-entry {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(4, minmax(105px, 1fr));
+  gap: 10px;
+  align-items: end;
+  padding: 11px 0 2px;
+}
+.performance-entry label {
+  display: grid;
+  gap: 5px;
+  color: #748075;
+  font-size: 10px;
+  font-weight: 650;
+}
+.performance-entry input,
+.performance-entry select {
+  width: 100%;
+  min-height: 34px;
+  padding: 6px 8px;
+  color: #344337;
+  border: 1px solid #e0e8de;
+  border-radius: 8px;
+  background: #fbfcfa;
+  font-size: 11px;
+}
+.performance-entry > .subtle-label { grid-column: 1 / -1; line-height: 1.5; }
+.session-effort-control { display: flex; align-items: center; gap: 8px; color: #748075; font-size: 10px; }
+.session-effort-control select { min-height: 32px; padding: 5px 8px; color: #344337; border: 1px solid #e0e8de; border-radius: 8px; background: #fbfcfa; font-size: 10px; }
+.weekly-schedule { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.weekly-schedule-day {
+  display: grid;
+  min-height: 106px;
+  align-content: start;
+  gap: 8px;
+  padding: 13px;
+  border: 1px solid #e9ede6;
+  border-radius: 10px;
+  background: #fbfcfa;
+}
+.weekly-schedule-day.is-today { border-color: #a8c99b; background: #f1f8ed; }
+.weekly-schedule-day strong { color: #385541; font-size: 11px; }
+.weekly-schedule-day span { color: #354838; font-size: 11px; font-weight: 650; }
+.weekly-schedule-day small { color: #778579; font-size: 9px; line-height: 1.5; }
+.macro-summary { display: flex; flex-wrap: wrap; gap: 9px 18px; color: #748075; font-size: 11px; }
+.macro-summary strong { color: #344337; }
+.meal-macros { padding: 11px 0 2px; }
+.daily-nutrition-summary { padding: 21px; }
+.daily-nutrition-summary .content-card-heading h2 { margin-bottom: 0; }
+
+@media (max-width: 760px) {
+  .weekly-schedule { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .performance-entry { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

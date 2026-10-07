@@ -43,6 +43,7 @@ export const apiEndpoints = {
     getWorkoutRec: (userId) => `/workouts/recommend/${userId}`,
     getMealHistory: (userId) => `/nutrition/history/${userId}`,
     getMealRec: (userId, mealType) => `/nutrition/recommend/${userId}/${mealType}`,
+    getDailyMealPlan: (userId) => `/nutrition/plan/${userId}`,
     getFoodReplacement: (foodId) => `/nutrition/replacement/${foodId}`,
     getUserProgress: (userId) => `/progress/${userId}`,
     updateProgress: (userId) => `/progress/update/${userId}`,

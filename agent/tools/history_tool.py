@@ -15,6 +15,7 @@ def log_workout_history(
     status: str,
     difficulty_felt: str = None,
     workout_date: date = None,
+    performance: dict | None = None,
 ):
     """Persists a completed or skipped workout for a real user."""
     db: Session = SessionLocal()
@@ -29,6 +30,7 @@ def log_workout_history(
             muscle_group=muscle_group,
             status=status,
             difficulty_felt=difficulty_felt,
+            performance=performance,
         )
         if workout_date is not None:
             entry.workout_date = workout_date
@@ -88,7 +90,12 @@ def get_workout_history(user_id: str):
     try:
         uid = int(user_id)
         # Fetch all workouts for the user, ordered by date descending
-        workouts = db.query(WorkoutHistory).filter(WorkoutHistory.user_id == uid).order_by(WorkoutHistory.workout_date.desc()).all()
+        workouts = db.query(WorkoutHistory).filter(
+            WorkoutHistory.user_id == uid
+        ).order_by(
+            WorkoutHistory.workout_date.desc(),
+            WorkoutHistory.created_at.desc(),
+        ).all()
         
         # Convert SQLAlchemy objects to a list of dictionaries
         return [
@@ -97,7 +104,8 @@ def get_workout_history(user_id: str):
                 "date": str(w.workout_date),
                 "muscle_group": w.muscle_group,
                 "status": w.status,
-                "difficulty": w.difficulty_felt
+                "difficulty": w.difficulty_felt,
+                "performance": w.performance or {},
             } for w in workouts
         ]
 

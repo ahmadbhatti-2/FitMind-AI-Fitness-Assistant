@@ -7,6 +7,12 @@ from agent.tools.user_tool import get_user_profile, update_user_profile
 router = APIRouter()
 
 # Schemas for Request/Response
+class InjuryDetail(BaseModel):
+    name: str = Field(min_length=1, max_length=120)
+    severity: Literal["mild", "moderate", "severe", "acute"] = "moderate"
+    context: Optional[str] = Field(default=None, max_length=200)
+
+
 class ProfileUpdate(BaseModel):
     age: Optional[int] = Field(default=None, ge=13, le=120)
     gender: Optional[Literal["female", "male", "other"]] = None
@@ -19,7 +25,7 @@ class ProfileUpdate(BaseModel):
     diet_preference: Optional[Literal["omnivore", "vegetarian", "vegan", "pescatarian"]] = None
     allergies: Optional[list[str]] = None
     restrictions: Optional[list[str]] = None
-    injuries: Optional[list[str]] = None
+    injuries: Optional[list[str | InjuryDetail]] = None
 
 @router.get("/profile/{user_id}", dependencies=[Depends(require_path_user)])
 async def read_profile(user_id: str):

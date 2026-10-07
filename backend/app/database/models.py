@@ -54,6 +54,7 @@ class WorkoutHistory(Base):
     workout_date = Column(Date, default=date.today)
     status = Column(String)
     difficulty_felt = Column(String)
+    performance = Column(JSONB)
     created_at = Column(DateTime, default=utcnow)
 
     user = relationship("User", back_populates="workout_history")

@@ -7,10 +7,8 @@ import { mealImage } from '../services/visualAssets';
 
 const MEAL_TYPES = ['breakfast', 'lunch', 'dinner', 'snack'];
 
-function fetchMealRecommendations(userId) {
-  return Promise.allSettled(
-    MEAL_TYPES.map((type) => api.get(apiEndpoints.getMealRec(userId, type))),
-  );
+function fetchDailyMealPlan(userId) {
+  return api.get(apiEndpoints.getDailyMealPlan(userId));
 }
 
 function errorMessage(error) {
@@ -20,6 +18,8 @@ function errorMessage(error) {
 export default function Nutrition() {
   const { user } = useAuth();
   const [meals, setMeals] = useState({});
+  const [dailyTargets, setDailyTargets] = useState(null);
+  const [estimatedTotals, setEstimatedTotals] = useState(null);
   const [errors, setErrors] = useState({});
   const [logged, setLogged] = useState({});
   const [busy, setBusy] = useState({});
@@ -27,33 +27,31 @@ export default function Nutrition() {
   const [notice, setNotice] = useState('');
 
   const loadMeals = useCallback(async () => {
-    const results = await fetchMealRecommendations(user.user_id);
-    const nextMeals = {};
-    const nextErrors = {};
-    results.forEach((result, index) => {
-      const type = MEAL_TYPES[index];
-      if (result.status === 'fulfilled') nextMeals[type] = result.value.data;
-      else nextErrors[type] = errorMessage(result.reason);
-    });
-    setMeals(nextMeals);
-    setErrors(nextErrors);
-    setLoading(false);
+    try {
+      const { data } = await fetchDailyMealPlan(user.user_id);
+      setMeals(data.meals || {});
+      setDailyTargets(data.daily_targets || null);
+      setEstimatedTotals(data.estimated_totals || null);
+      setErrors({});
+    } catch (error) {
+      setErrors({ plan: errorMessage(error) });
+    } finally {
+      setLoading(false);
+    }
   }, [user.user_id]);
 
   useEffect(() => {
     let active = true;
-    fetchMealRecommendations(user.user_id).then((results) => {
+    fetchDailyMealPlan(user.user_id).then(({ data }) => {
       if (!active) return;
-      const nextMeals = {};
-      const nextErrors = {};
-      results.forEach((result, index) => {
-        const type = MEAL_TYPES[index];
-        if (result.status === 'fulfilled') nextMeals[type] = result.value.data;
-        else nextErrors[type] = errorMessage(result.reason);
-      });
-      setMeals(nextMeals);
-      setErrors(nextErrors);
-      setLoading(false);
+      setMeals(data.meals || {});
+      setDailyTargets(data.daily_targets || null);
+      setEstimatedTotals(data.estimated_totals || null);
+      setErrors({});
+    }).catch((error) => {
+      if (active) setErrors({ plan: errorMessage(error) });
+    }).finally(() => {
+      if (active) setLoading(false);
     });
     return () => { active = false; };
   }, [user.user_id]);
@@ -96,6 +94,25 @@ export default function Nutrition() {
       </div>
       {notice && <div className="inline-message inline-success" role="status"><Check size={17} /> {notice}</div>}
       {loading && <div className="loading-state"><LoaderCircle className="spin" /> Finding meals that fit your preferences…</div>}
+      {!loading && errors.plan && <div className="inline-message inline-error" role="alert"><CircleAlert size={17} /> {errors.plan}</div>}
+      {!loading && dailyTargets?.calculation_available && (
+        <section className="content-card daily-nutrition-summary">
+          <div className="content-card-heading"><div><span className="eyebrow">YOUR DAILY NUTRITION TARGET</span><h2>{dailyTargets.calories} kcal estimated</h2></div><span className="subtle-label">Starting estimate · adjust with a qualified professional</span></div>
+          <div className="macro-summary">
+            <span>Protein <strong>{dailyTargets.protein_g} g</strong></span>
+            <span>Carbs <strong>{dailyTargets.carbs_g} g</strong></span>
+            <span>Fat <strong>{dailyTargets.fat_g} g</strong></span>
+            {estimatedTotals && <span>Plan <strong>{estimatedTotals.calories} kcal</strong></span>}
+            {estimatedTotals && <span>Plan protein <strong>{estimatedTotals.protein_g} g</strong></span>}
+            {estimatedTotals && <span>Plan carbs <strong>{estimatedTotals.carbs_g} g</strong></span>}
+            {estimatedTotals && <span>Plan fat <strong>{estimatedTotals.fat_g} g</strong></span>}
+          </div>
+          {dailyTargets.note && <p className="subtle-label">{dailyTargets.note}</p>}
+        </section>
+      )}
+      {!loading && dailyTargets && !dailyTargets.calculation_available && (
+        <p className="inline-message inline-warning">{dailyTargets.note}</p>
+      )}
 
       {!loading && (
         <div className="meal-grid">
@@ -114,6 +131,12 @@ export default function Nutrition() {
                     <>
                       <h2>{meal.meal_name}</h2>
                       <div className="ingredient-list">{meal.ingredients?.map((ingredient) => <span key={ingredient}>{ingredient.replaceAll('_', ' ')}</span>)}</div>
+                      {meal.macros && <div className="macro-summary meal-macros">
+                        <span>{meal.calories_est} kcal</span>
+                        <span>Protein <strong>{meal.macros.protein_g} g</strong></span>
+                        <span>Carbs <strong>{meal.macros.carbs_g} g</strong></span>
+                        <span>Fat <strong>{meal.macros.fat_g} g</strong></span>
+                      </div>}
                       <p className="why-note"><Utensils size={15} /> {meal.reasons?.[1] || 'Matched to your saved preferences.'}</p>
                       {meal.is_high_protein && <span className="nutrition-badge">Protein-rich option</span>}
                       <div className="meal-actions">

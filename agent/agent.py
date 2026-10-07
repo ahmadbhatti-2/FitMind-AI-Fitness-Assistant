@@ -13,7 +13,7 @@ from agent.prompts import SYSTEM_PROMPT
 from agent.tools.user_tool import get_user_profile
 from agent.tools.history_tool import get_workout_history, get_last_trained_muscle
 from agent.tools.workout_tool import recommend_workout
-from agent.tools.diet_tool import recommend_meal
+from agent.tools.diet_tool import recommend_daily_meal_plan, recommend_meal
 from agent.tools.progress_tool import get_user_progress
 from agent.tools.feedback_tool import get_user_feedback_summary
 from recommendation import recovery_rules, safety_rules
@@ -42,6 +42,7 @@ tools = [
     get_last_trained_muscle,
     recommend_workout, 
     recommend_meal, 
+    recommend_daily_meal_plan,
     get_user_progress, 
     get_user_feedback_summary
 ]
@@ -78,7 +79,17 @@ def recovery_check_node(state: AgentState):
     last_workout_date = completed_history[0].get('date') if completed_history else None
 
     is_recovered, msg = recovery_rules.calculate_recovery_window(
-        last_workout_date, last_muscle
+        last_workout_date,
+        last_muscle,
+        profile=state['context'].get('profile', {}),
+        recent_sessions=sum(
+            1
+            for workout in completed_history
+            if last_muscle
+            and str(last_muscle).casefold()
+            in str(workout.get('muscle_group') or '').casefold()
+        ),
+        difficulty=completed_history[0].get('difficulty') if completed_history else None,
     )
     
     state['context']['recovery_status'] = {"recovered": is_recovered, "message": msg}

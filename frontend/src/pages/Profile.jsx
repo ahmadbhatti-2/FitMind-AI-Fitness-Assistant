@@ -14,7 +14,7 @@ const LIST_FIELDS = [
   { name: 'equipment', label: 'Equipment you can use', placeholder: 'bodyweight, dumbbells, bench' },
   { name: 'allergies', label: 'Food allergies', placeholder: 'peanuts, milk, eggs' },
   { name: 'restrictions', label: 'Ingredients to avoid', placeholder: 'gluten, milk, soy' },
-  { name: 'injuries', label: 'Injuries or movement limitations', placeholder: 'shoulder, knee' },
+  { name: 'injuries', label: 'Injuries or movement limitations', placeholder: 'knee severe pain, shoulder mild discomfort' },
 ];
 
 function errorMessage(error) {
@@ -23,6 +23,14 @@ function errorMessage(error) {
 
 function fetchProfile(userId) {
   return api.get(apiEndpoints.getUserProfile(userId));
+}
+
+function profileListValue(name, value) {
+  if (!Array.isArray(value)) return value || '';
+  return value.map((item) => {
+    if (name !== 'injuries' || !item || typeof item !== 'object') return item;
+    return [item.name, item.severity, item.context].filter(Boolean).join(' ');
+  }).join(', ');
 }
 
 export default function Profile() {
@@ -66,8 +74,17 @@ export default function Profile() {
     LIST_FIELDS.forEach(({ name }) => {
       const value = payload[name];
       payload[name] = (Array.isArray(value) ? value : String(value || '').split(','))
-        .map((item) => item.trim().toLowerCase())
-        .filter(Boolean);
+        .map((item) => {
+          if (name === 'injuries' && item && typeof item === 'object') {
+            return {
+              name: String(item.name || '').trim().toLowerCase(),
+              severity: item.severity || 'moderate',
+              context: String(item.context || '').trim(),
+            };
+          }
+          return String(item).trim().toLowerCase();
+        })
+        .filter((item) => (typeof item === 'string' ? item : item.name));
     });
     try {
       await api.put(apiEndpoints.updateUserProfile(user.user_id), payload);
@@ -120,10 +137,10 @@ export default function Profile() {
           <div className="content-card-heading"><div><span className="eyebrow">SAFETY & ACCESS</span><h2>Restrictions and equipment</h2></div><ShieldCheck size={20} className="text-emerald-600" /></div>
           <div className="form-grid">
             {LIST_FIELDS.map(({ name, label, placeholder }) => (
-              <label className="field-label" key={name}>{label}<input name={name} value={Array.isArray(profile[name]) ? profile[name].join(', ') : profile[name] || ''} onChange={update} placeholder={placeholder} /></label>
+              <label className="field-label" key={name}>{label}<input name={name} value={profileListValue(name, profile[name])} onChange={update} placeholder={placeholder} /></label>
             ))}
           </div>
-          <p className="safety-note"><AlertTriangle size={15} /> Meal exclusions can only use ingredient and allergen labels in the catalog; certified diets are not verified. Consult a qualified professional about injuries or dietary needs.</p>
+          <p className="safety-note"><AlertTriangle size={15} /> Add injury site, severity, and movement context when known (for example, “knee severe pain”). Severe/acute notes further restrict related movements. Meal exclusions can only use catalog labels; consult a qualified professional about injuries or dietary needs.</p>
         </section>
 
         <div className="form-footer">

@@ -42,11 +42,15 @@ FastAPI
 
 The workout and meal recommendation endpoints use the project's catalog and recommendation rules. The AI coach uses LangGraph and Gemini, with tools that retrieve member-specific context and fitness recommendations.
 
+Workout selection and meal composition are produced by the deterministic recommendation engine; Gemini explains and converses about those results rather than inventing plans. Workout completion records can include per-exercise sets, top reps, load, and effort for later progression. Nutrition values and calorie targets are estimates, not medical guidance.
+
 ## Features
 
 - Account registration and sign-in with hashed passwords and expiring API tokens
-- Profile-aware workout recommendations using goals, experience, equipment, recent activity, and recorded injuries
-- Meal recommendations that consider dietary preferences, goals, logged meals, and recorded allergens
+- Dynamically assembled weekly workouts using goals, experience, every required equipment item, injury severity/context, muscle recovery, and logged exercise performance
+- Seven-day training schedules with goal-specific sets, reps, rest intervals, and evidence-based next-load suggestions from recorded sets/reps/weights
+- A personalized full-day meal plan assembled from safe food combinations, with estimated portions and calories/macros calculated from food catalog values
+- Daily calorie and macro starting targets based on age, height, weight, gender, training frequency, and goal; targets are withheld for under-18 users or incomplete profiles
 - Workout and meal history, feedback, progress measurements, and consistency summaries
 - AI coach conversations grounded in the signed-in member's profile and recent workout history
 - Responsive dashboard and navigation for desktop and mobile
@@ -99,6 +103,12 @@ psql "$env:DATABASE_URL" -f .\database\schema.sql
 Run the schema command only when creating a new, empty database. Do not run it again against a database that already has the schema. Keep `.env` private and never commit real credentials.
 
 The `GOOGLE_API_KEY` is needed for AI coach responses. Set it in `.env` before using that feature.
+
+For an existing database created before workout performance logging was added, run this migration once from the `FitMind` folder:
+
+```powershell
+psql "$env:DATABASE_URL" -f .\database\migrations\001_add_workout_performance.sql
+```
 
 ## Run the application
 

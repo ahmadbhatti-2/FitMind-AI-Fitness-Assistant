@@ -37,6 +37,7 @@ CREATE TABLE workout_history (
     workout_date DATE DEFAULT CURRENT_DATE,
     status VARCHAR(20),
     difficulty_felt VARCHAR(20),
+    performance JSONB,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

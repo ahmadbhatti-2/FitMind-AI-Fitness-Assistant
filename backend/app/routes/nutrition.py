@@ -5,7 +5,11 @@ from pydantic import BaseModel
 from backend.app.auth import get_current_user, require_path_user
 from agent.tools.history_tool import get_meal_history
 from agent.tools.history_tool import log_meal_history
-from agent.tools.diet_tool import get_food_replacement, recommend_meal
+from agent.tools.diet_tool import (
+    get_food_replacement,
+    recommend_daily_meal_plan,
+    recommend_meal,
+)
 
 router = APIRouter()
 
@@ -59,6 +63,14 @@ async def get_direct_meal(user_id: str, meal_type: str):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@router.get("/plan/{user_id}", dependencies=[Depends(require_path_user)])
+async def get_daily_meal_plan(user_id: str):
+    """Return the complete portioned daily plan and its calculated nutrition targets."""
+    plan = recommend_daily_meal_plan(user_id)
+    if isinstance(plan, dict) and "error" in plan:
+        raise HTTPException(status_code=400, detail=plan["error"])
+    return plan
 
 @router.get("/replacement/{food_id}", dependencies=[Depends(get_current_user)])
 async def get_replacement(food_id: str):

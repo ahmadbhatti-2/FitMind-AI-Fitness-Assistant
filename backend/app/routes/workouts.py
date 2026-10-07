@@ -14,6 +14,7 @@ class WorkoutHistoryCreate(BaseModel):
     status: Literal["completed", "skipped"] = "completed"
     difficulty_felt: Optional[str] = None
     workout_date: Optional[date] = None
+    performance: Optional[dict[str, dict[str, float | int | str]]] = None
 
 @router.get("/history/{user_id}", dependencies=[Depends(require_path_user)])
 async def read_workout_history(user_id: str):
